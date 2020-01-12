@@ -1,0 +1,750 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>基于深度神经网络的高压GIS设备机械故障智能诊断研究</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!--Morris Chart CSS -->
+        <link rel="stylesheet" href="assets/plugins/morris/morris.css">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+        <!-- 分页 -->
+        <link rel="stylesheet" type="text/css" href="assets/css/fenye.css">
+
+
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container-fluid">
+
+                    <!-- Logo container-->
+                    <div class="logo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                            <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                            <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+
+
+                            <img src="assets/images/logo111.png" alt=""  height="90" class="logo-large">
+                            <img src="assets/images/logo444.png" alt="" width="728" height="86" class="logo-large">
+
+
+                    </div>
+                    <!-- End Logo container-->
+
+                    <!--<div class="headname">-->
+
+
+                    <!--</div>-->
+
+                    <!--<div class="menu-extras topbar-custom">-->
+
+
+                    <!--</div>-->
+                    <!-- end menu-extras -->
+
+                    <div class="clearfix"></div>
+
+                </div> <!-- end container -->
+            </div>
+            <!-- end topbar-main -->
+
+
+        </header>
+        <!-- End Navigation Bar-->
+
+
+        <div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- Page-Title -->
+
+                <!-- end page title end breadcrumb -->
+
+
+                <div class="row">
+
+                    <div class="col-xl-12">
+                        <div class="card-box">
+                            <div class="dropdown pull-right">
+                                <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="mdi mdi-dots-vertical"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">录入数据</a>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">诊断数据</a>
+
+                                </div>
+                            </div>
+
+                            <h4 class="header-title mt-0 m-b-30">诊断故障分析</h4>
+
+                            <div class="widget-chart-1">
+                                <div class="widget-chart-box-1">
+
+
+                                     <!-- biaoge -->
+
+
+
+
+
+                                </div>
+
+
+
+                                <div class="table-responsive">
+                                    <form >
+
+                                         <table id="cs_table" class="datatable"></table>
+                                    </form>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div><!-- end col -->
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+
+
+                    <div class="col-xl-12">
+                        <div class="card-box">
+                            <div class="dropdown pull-right">
+                                <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="mdi mdi-dots-vertical"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">导入</a>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">预测</a>
+
+                                </div>
+                            </div>
+                            <h4 class="header-title mt-0">数据预测结果</h4>
+
+
+
+                            <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
+
+
+
+                        </div>
+                    </div><!-- end col -->
+
+
+                </div>
+                <!-- end row -->
+
+
+
+
+
+
+            </div> <!-- end container -->
+
+
+            <!-- Right Sidebar -->
+            <div class="side-bar right-bar">
+                <a href="javascript:void(0);" class="right-bar-toggle">
+                    <i class="mdi mdi-close-circle-outline"></i>
+                </a>
+                <h4 class="">Notifications</h4>
+                <div class="notification-list nicescroll">
+                    <ul class="list-group list-no-border user-list">
+                        <li class="list-group-item">
+                            <a href="#" class="user-list-item">
+                                <div class="avatar">
+                                    <img src="assets/images/users/avatar-2.jpg" alt="">
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">Michael Zenaty</span>
+                                    <span class="desc">There are new settings available</span>
+                                    <span class="time">2 hours ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="user-list-item">
+                                <div class="icon bg-info">
+                                    <i class="mdi mdi-account"></i>
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">New Signup</span>
+                                    <span class="desc">There are new settings available</span>
+                                    <span class="time">5 hours ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="user-list-item">
+                                <div class="icon bg-pink">
+                                    <i class="mdi mdi-comment"></i>
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">New Message received</span>
+                                    <span class="desc">There are new settings available</span>
+                                    <span class="time">1 day ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item active">
+                            <a href="#" class="user-list-item">
+                                <div class="avatar">
+                                    <img src="assets/images/users/avatar-3.jpg" alt="">
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">James Anderson</span>
+                                    <span class="desc">There are new settings available</span>
+                                    <span class="time">2 days ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item active">
+                            <a href="#" class="user-list-item">
+                                <div class="icon bg-warning">
+                                    <i class="mdi mdi-settings"></i>
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">Settings</span>
+                                    <span class="desc">There are new settings available</span>
+                                    <span class="time">1 day ago</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- /Right-bar -->
+
+        </div>
+        <!-- end wrapper -->
+
+
+        <!-- Footer -->
+
+        <!--<footer class="footer">-->
+            <!--<div class="container">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-12 text-center">-->
+                        <!--2016 - 2018 © Adminto. Coderthemes.com-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</footer>-->
+
+        <!-- End Footer -->
+
+
+
+
+
+        <!--line-->
+        <script src="assets/js/highcharts.js"></script>
+        <script src="assets/js/exporting.js"></script>
+        <script src="assets/js/export-data.js"></script>
+
+        <script>
+            Highcharts.chart('container', {
+                chart: {
+                  type: 'line'
+                },
+                title: {
+                  text: '标题'
+                },
+                subtitle: {
+                  text: '副标题'
+                },
+                xAxis: {
+                  categories: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+                },
+                yAxis: {
+                  title: {
+                    text: '纵坐标 (单位)'
+                  }
+                },
+                plotOptions: {
+                  line: {
+                    dataLabels: {
+                      enabled: true
+                    },
+                    enableMouseTracking: false
+                  }
+                },
+                series: [{
+                  name: '名称',
+                  data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3]
+                }]
+              });
+
+
+        // 图表初始化函数
+        var chart = Highcharts.chart('container', options);
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+
+        <!-- KNOB JS -->
+        <!--[if IE]>
+        <script type="text/javascript" src="assets/plugins/jquery-knob/excanvas.js"></script>
+        <![endif]-->
+        <script src="assets/plugins/jquery-knob/jquery.knob.js"></script>
+
+        <!--Morris Chart-->
+        <script src="assets/plugins/morris/morris.min.js"></script>
+        <script src="assets/plugins/raphael/raphael-min.js"></script>
+
+        <!-- Dashboard init -->
+        <script src="assets/pages/jquery.dashboard.js"></script>
+
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+
+
+        <!-- App js -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/pages/fenye.js"></script>
+
+
+
+
+        <script type="text/javascript">
+            var data = [];
+                for(var i=0;i<20;i++){
+            data[i] = {id:i+1,name:"特征值1."+(i+1),gender:"特征值2."+(i+1),age:"特征值3."+(i+1),address:"特征值4."+(i+1),a1:1,a2:1,a3:"√"};
+                  }
+            var cs = new table({
+                "tableId":"cs_table",    //必须
+                "headers":["序号","特征值1","特征值2","特征值3","特征值4","实际故障类型","诊断故障类型","诊断结果"],   //必须
+                "data":data,        //必须
+                "displayNum": 10,    //必须   默认 10
+               "groupDataNum":10  //可选    默认 10
+                 });
+              </script>
+
+
+    </body>
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>基于深度神经网络的高压GIS设备机械故障智能诊断研究</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!--Morris Chart CSS -->
+        <link rel="stylesheet" href="assets/plugins/morris/morris.css">
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+        <!-- 分页 -->
+        <link rel="stylesheet" type="text/css" href="assets/css/fenye.css">
+
+
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container-fluid">
+
+                    <!-- Logo container-->
+                    <div class="logo">
+                        <!-- Text Logo -->
+                        <!--<a href="index.html" class="logo">-->
+                            <!--<span class="logo-small"><i class="mdi mdi-radar"></i></span>-->
+                            <!--<span class="logo-large"><i class="mdi mdi-radar"></i> Adminto</span>-->
+                        <!--</a>-->
+                        <!-- Image Logo -->
+
+
+                            <img src="assets/images/logo111.png" alt=""  height="90" class="logo-large">
+                            <img src="assets/images/logo444.png" alt="" width="728" height="86" class="logo-large">
+
+
+                    </div>
+                    <!-- End Logo container-->
+
+                    <!--<div class="headname">-->
+
+
+                    <!--</div>-->
+
+                    <!--<div class="menu-extras topbar-custom">-->
+
+
+                    <!--</div>-->
+                    <!-- end menu-extras -->
+
+                    <div class="clearfix"></div>
+
+                </div> <!-- end container -->
+            </div>
+            <!-- end topbar-main -->
+
+
+        </header>
+        <!-- End Navigation Bar-->
+
+
+        <div class="wrapper">
+            <div class="container-fluid">
+
+                <!-- Page-Title -->
+
+                <!-- end page title end breadcrumb -->
+
+
+                <div class="row">
+
+                    <div class="col-xl-12">
+                        <div class="card-box">
+                            <div class="dropdown pull-right">
+                                <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="mdi mdi-dots-vertical"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">录入数据</a>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">诊断数据</a>
+
+                                </div>
+                            </div>
+
+                            <h4 class="header-title mt-0 m-b-30">诊断故障分析</h4>
+
+                            <div class="widget-chart-1">
+                                <div class="widget-chart-box-1">
+
+
+                                     <!-- biaoge -->
+
+
+
+
+
+                                </div>
+
+
+
+                                <div class="table-responsive">
+                                    <form >
+
+                                         <table id="cs_table" class="datatable"></table>
+                                    </form>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div><!-- end col -->
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+
+
+                    <div class="col-xl-12">
+                        <div class="card-box">
+                            <div class="dropdown pull-right">
+                                <a href="#" class="dropdown-toggle arrow-none card-drop" data-toggle="dropdown" aria-expanded="false">
+                                    <i class="mdi mdi-dots-vertical"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">导入</a>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item">预测</a>
+
+                                </div>
+                            </div>
+                            <h4 class="header-title mt-0">数据预测结果</h4>
+
+
+
+                            <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
+
+
+
+                        </div>
+                    </div><!-- end col -->
+
+
+                </div>
+                <!-- end row -->
+
+
+
+
+
+
+            </div> <!-- end container -->
+
+
+            <!-- Right Sidebar -->
+            <div class="side-bar right-bar">
+                <a href="javascript:void(0);" class="right-bar-toggle">
+                    <i class="mdi mdi-close-circle-outline"></i>
+                </a>
+                <h4 class="">Notifications</h4>
+                <div class="notification-list nicescroll">
+                    <ul class="list-group list-no-border user-list">
+                        <li class="list-group-item">
+                            <a href="#" class="user-list-item">
+                                <div class="avatar">
+                                    <img src="assets/images/users/avatar-2.jpg" alt="">
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">Michael Zenaty</span>
+                                    <span class="desc">There are new settings available</span>
+                                    <span class="time">2 hours ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="user-list-item">
+                                <div class="icon bg-info">
+                                    <i class="mdi mdi-account"></i>
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">New Signup</span>
+                                    <span class="desc">There are new settings available</span>
+                                    <span class="time">5 hours ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="user-list-item">
+                                <div class="icon bg-pink">
+                                    <i class="mdi mdi-comment"></i>
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">New Message received</span>
+                                    <span class="desc">There are new settings available</span>
+                                    <span class="time">1 day ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item active">
+                            <a href="#" class="user-list-item">
+                                <div class="avatar">
+                                    <img src="assets/images/users/avatar-3.jpg" alt="">
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">James Anderson</span>
+                                    <span class="desc">There are new settings available</span>
+                                    <span class="time">2 days ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item active">
+                            <a href="#" class="user-list-item">
+                                <div class="icon bg-warning">
+                                    <i class="mdi mdi-settings"></i>
+                                </div>
+                                <div class="user-desc">
+                                    <span class="name">Settings</span>
+                                    <span class="desc">There are new settings available</span>
+                                    <span class="time">1 day ago</span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- /Right-bar -->
+
+        </div>
+        <!-- end wrapper -->
+
+
+        <!-- Footer -->
+
+        <!--<footer class="footer">-->
+            <!--<div class="container">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-12 text-center">-->
+                        <!--2016 - 2018 © Adminto. Coderthemes.com-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</footer>-->
+
+        <!-- End Footer -->
+
+
+
+
+
+        <!--line-->
+        <script src="assets/js/highcharts.js"></script>
+        <script src="assets/js/exporting.js"></script>
+        <script src="assets/js/export-data.js"></script>
+
+        <script>
+            Highcharts.chart('container', {
+                chart: {
+                  type: 'line'
+                },
+                title: {
+                  text: '标题'
+                },
+                subtitle: {
+                  text: '副标题'
+                },
+                xAxis: {
+                  categories: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+                },
+                yAxis: {
+                  title: {
+                    text: '纵坐标 (单位)'
+                  }
+                },
+                plotOptions: {
+                  line: {
+                    dataLabels: {
+                      enabled: true
+                    },
+                    enableMouseTracking: false
+                  }
+                },
+                series: [{
+                  name: '名称',
+                  data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3]
+                }]
+              });
+
+
+        // 图表初始化函数
+        var chart = Highcharts.chart('container', options);
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+
+        <!-- KNOB JS -->
+        <!--[if IE]>
+        <script type="text/javascript" src="assets/plugins/jquery-knob/excanvas.js"></script>
+        <![endif]-->
+        <script src="assets/plugins/jquery-knob/jquery.knob.js"></script>
+
+        <!--Morris Chart-->
+        <script src="assets/plugins/morris/morris.min.js"></script>
+        <script src="assets/plugins/raphael/raphael-min.js"></script>
+
+        <!-- Dashboard init -->
+        <script src="assets/pages/jquery.dashboard.js"></script>
+
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+
+
+        <!-- App js -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/pages/fenye.js"></script>
+
+
+
+
+        <script type="text/javascript">
+            var data = [];
+                for(var i=0;i<20;i++){
+            data[i] = {id:i+1,name:"特征值1."+(i+1),gender:"特征值2."+(i+1),age:"特征值3."+(i+1),address:"特征值4."+(i+1),a1:1,a2:1,a3:"√"};
+                  }
+            var cs = new table({
+                "tableId":"cs_table",    //必须
+                "headers":["序号","特征值1","特征值2","特征值3","特征值4","实际故障类型","诊断故障类型","诊断结果"],   //必须
+                "data":data,        //必须
+                "displayNum": 10,    //必须   默认 10
+               "groupDataNum":10  //可选    默认 10
+                 });
+              </script>
+
+
+    </body>
+>>>>>>> 第一次尝试
+</html>
